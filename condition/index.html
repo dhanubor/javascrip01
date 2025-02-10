@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>জোড় নাকি বিজোড়?</title>
+</head>
+<body>
+    <h2>সংখ্যাটি জোড় নাকি বিজোড়?</h2>
+    <input type="number" id="numInput" placeholder="সংখ্যা লিখুন">
+    <button onclick="checkEvenOdd()">চেক করুন</button>
+    <p id="result"></p>
+
+    <script>
+        function checkEvenOdd() {
+            let num = document.getElementById("numInput").value;
+            num = Number(num);
+
+            if (num % 2 === 0) {
+                document.getElementById("result").innerText = "${number} এই সংখ্যা জোড়।";
+            } else {
+                document.getElementById("result").innerText = "এই সংখ্যা বিজোড়।";
+            }
+        }
+    </script>
+</body>
+</html>
